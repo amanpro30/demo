@@ -13,7 +13,9 @@ const rootReducer = combineReducers({
     index: indexReducer,
 })
 
-const config = {}
+const config = {
+    broadcastChannelOption: { type: "localstorage" },
+}
 const middlewares = [
   createStateSyncMiddleware(config),
 ]
